@@ -1,0 +1,139 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="BorderBack"
+       TargetType="Border">
+        <Setter Property="Background" Value="#D4DAFC"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+    </Style>
+
+    <!--Label-->
+    <Style x:Key="LabelLogo" TargetType="Label">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="NormalLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="FontSize" Value="32"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <!--TextBox-->
+    <Style TargetType="TextBox"
+       x:Key="TextBox"
+       BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="Height" Value="56"/>
+        <Setter Property="Width" Value="465"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="CaretBrush" Value="#625C97"/>
+        <Setter Property="Foreground" Value="#625C97"/>
+    </Style>
+
+    <!--PasswordBox-->
+    <Style TargetType="PasswordBox"
+       x:Key="PasswordBox"
+       BasedOn="{StaticResource MaterialDesignOutlinedRevealPasswordBox}">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="Height" Value="56"/>
+        <Setter Property="Width" Value="465"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="CaretBrush" Value="#625C97"/>
+        <Setter Property="Foreground" Value="#625C97"/>
+    </Style>
+    
+    <!--Button-->
+    <Style TargetType="Button"
+           x:Key="Button"
+           BasedOn="{StaticResource MaterialDesignRaisedLightButton}">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+        <Setter Property="Background" Value="#625C97"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    
+    <!--ToolTip-->
+    <Style TargetType="ToolTip"
+           x:Key="ToolTip"
+           BasedOn="{StaticResource MaterialDesignToolTip}">
+        <Setter Property="FontFamily" Value="Rubik"/>
+        <Setter Property="Background" Value="#383182"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+    </Style>
+    
+    <!--TextBlock-->
+    <Style TargetType="TextBlock"
+           x:Key="TextBlock">
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="Foreground" Value="#D4DAFC"/>
+    </Style>
+    
+    <!--DataGrid-->
+    <Style TargetType="DataGrid">
+        <Setter Property="FontFamily" Value="Rubik"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HeadersVisibility" Value="Column"/>
+        <Setter Property="Foreground" Value="#383182"/>
+    </Style>
+
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="FontFamily" Value="Rubik"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="#383182"/>
+    </Style>
+
+    <Style TargetType="DataGridRow">
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="#383182" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="#383182" />
+        </Style.Resources>
+    </Style>
+
+    <Style TargetType="DataGridCell">
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+    </Style>
+    
+    <!--DatePicker-->
+    <Style TargetType="DatePicker"
+           x:Key="DatePicker"
+           BasedOn="{StaticResource MaterialDesignOutlinedDatePicker}">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="Ostrovsky"/>
+        <Setter Property="Foreground" Value="#625C97"/>
+        <Setter Property="BorderBrush" Value="#625C97"/>
+    </Style>
+
+</ResourceDictionary>
